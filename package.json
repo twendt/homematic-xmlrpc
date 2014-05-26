@@ -7,7 +7,7 @@
 , "author" : "Brandon Alexander <baalexander@gmail.com> (https://github.com/baalexander)"
 , "repository" : {
     "type" : "git"
-  , "url" : "git://github.com/baalexander/node-xmlrpc.git"
+  , "url" : "git://github.com/hobbyquaker/node-xmlrpc.git"
   }
 , "bugs" : {
     "url" : "https://github.com/baalexander/node-xmlrpc/issues"
@@ -18,7 +18,7 @@
 , "main" : "./lib/xmlrpc.js"
 , "dependencies" : {
     "sax"   : "0.4.x"
-  , "xmlbuilder" : "https://github.com/hobbyquaker/xmlbuilder-js/tarball/d5f43b975801dea2af1425b49c5ba367da1cfe64"
+  , "xmlbuilder" : "https://github.com/hobbyquaker/xmlbuilder-js/tarball/e9f9e2124a1d9420f7ae3d91cdd5e25d30602bfb"
   }
 , "devDependencies" : {
     "vows" : "0.7.x"
