@@ -18,7 +18,7 @@
 , "main" : "./lib/xmlrpc.js"
 , "dependencies" : {
     "sax"   : "0.4.x"
-  , "xmlbuilder" : "https://github.com/hobbyquaker/xmlbuilder-js/tarball/1b62ab97ed2ab303f3bde15ea982f4cd40a19649"
+  , "xmlbuilder" : "https://github.com/hobbyquaker/xmlbuilder-js/tarball/29fe5030dc6852007dc8d1bfd5109d75f8da58d5"
   }
 , "devDependencies" : {
     "vows" : "0.7.x"
