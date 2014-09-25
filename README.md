@@ -1,3 +1,23 @@
+## Hobbyquaker Patch for use with HomeMatic XML-RPC Interface
+
+I patched this library to make it work with the HomeMatic XML-RPC Interface.
+
+You can explicitly set type double by supplying a object instead of a number:
+```javascript
+{explicitDouble: 1}
+```
+
+Normally node-xmlrpc would send an integer if you supply a number without digits. HomeMatic doesn't like that...
+
+I also patched generation of empty tags - HomeMatic doesn't like stuff like ```<string/>``` - so now it generates a Homematic compatible ```<string></string>```
+
+If you wanna use this Lib in your project put following in your package.json:
+```javascript
+ "dependencies": {
+    "xmlrpc": "https://github.com/hobbyquaker/node-xmlrpc/tarball/b5b97f2856b4bcbc1c6a1ec3aa99bd7f75eee3fc",
+  }
+```
+
 ## The What
 
 The xmlrpc module is a pure JavaScript XML-RPC server and client for node.js.
