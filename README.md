@@ -1,22 +1,11 @@
-## Hobbyquaker Patch for use with HomeMatic XML-RPC Interface
+Fork of [baalexander's xmlrpc module](https://github.com/baalexander/node-xmlrpc/) patched to make it work with the [HomeMatic](http://www.homematic.com) XML-RPC Interface.
 
-I patched this library to make it work with the HomeMatic XML-RPC Interface.
+* If NotFound Event is fired default reply is an empty string
+* Generation of empty tags - HomeMatic doesn't like stuff like ```<string/>``` - so now it generates a Homematic compatible ```<string></string>```
+* You can explicitly set type double by using as param ``` {explicitDouble: 1}```
 
-You can explicitly set type double by supplying a object instead of a number:
-```javascript
-{explicitDouble: 1}
-```
 
-Normally node-xmlrpc would send an integer if you supply a number without digits. HomeMatic doesn't like that...
-
-I also patched generation of empty tags - HomeMatic doesn't like stuff like ```<string/>``` - so now it generates a Homematic compatible ```<string></string>```
-
-If you wanna use this Lib in your project put following in your package.json:
-```javascript
- "dependencies": {
-    "xmlrpc": "https://github.com/hobbyquaker/node-xmlrpc/tarball/b5b97f2856b4bcbc1c6a1ec3aa99bd7f75eee3fc",
-  }
-```
+Don't use this Module if you wanna communicate with a HomeMatic CCU! For better performance and higher stability use the [Binary RPC Module](https://github.com/hobbyquaker/binrpc) instead. 
 
 ## The What
 
@@ -35,7 +24,7 @@ method responses, or as both.
 ### To Install
 
 ```bash
-npm install xmlrpc
+npm install homematic-xmlrpc
 ```
 
 ### To Use
