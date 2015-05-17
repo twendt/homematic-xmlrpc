@@ -1,10 +1,15 @@
-Fork of [baalexander's xmlrpc module](https://github.com/baalexander/node-xmlrpc/) patched to make it work with the [HomeMatic](http://www.homematic.com) XML-RPC Interface.
+# Fork of [baalexander's xmlrpc module](https://github.com/baalexander/node-xmlrpc/) 
 
+patched to make it work with the [HomeMatic](http://www.homematic.com) XML-RPC Interface.
+
+Changes include:
 * If NotFound Event is fired default reply is an empty string
 * Generation of empty tags - HomeMatic doesn't like stuff like ```<string/>``` - so now it generates a Homematic compatible ```<string></string>```
 * You can explicitly set type double by using as param ``` {explicitDouble: 1}```
 
 As an alternative when communicating with a HomeMatic CCU or for use with CuXD I suggest to use the [Binary RPC Module](https://github.com/hobbyquaker/binrpc) (same interface, less overhead, smaller implementation). 
+
+# Original Readme of baalexander's xmlrpc module
 
 ## The What
 
