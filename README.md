@@ -4,8 +4,7 @@ Fork of [baalexander's xmlrpc module](https://github.com/baalexander/node-xmlrpc
 * Generation of empty tags - HomeMatic doesn't like stuff like ```<string/>``` - so now it generates a Homematic compatible ```<string></string>```
 * You can explicitly set type double by using as param ``` {explicitDouble: 1}```
 
-
-Don't use this Module if you wanna communicate with a HomeMatic CCU! For better performance and higher stability use the [Binary RPC Module](https://github.com/hobbyquaker/binrpc) instead. 
+As an alternative when communicating with a HomeMatic CCU or for use with CuXD I suggest to use the [Binary RPC Module](https://github.com/hobbyquaker/binrpc) (same interface, less overhead, smaller implementation). 
 
 ## The What
 
