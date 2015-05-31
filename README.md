@@ -6,8 +6,9 @@ Changes include:
 * If NotFound Event is fired default reply is an empty string
 * Generation of empty tags - HomeMatic doesn't like stuff like ```<string/>``` - so now it generates a Homematic compatible ```<string></string>```
 * You can explicitly set type double by using as param ``` {explicitDouble: 1}```
+* Add Content-Length Header
 
-As an alternative when communicating with a HomeMatic CCU or for use with CuXD I suggest to use the [Binary RPC Module](https://github.com/hobbyquaker/binrpc) (same interface, less overhead, smaller implementation). 
+As an alternative when communicating with a HomeMatic CCU (rfd/hs485d) or for use with CUxD I suggest to use the [Binary RPC Module](https://github.com/hobbyquaker/binrpc) (same interface, less overhead, smaller implementation).
 
 # Original Readme of baalexander's xmlrpc module
 
