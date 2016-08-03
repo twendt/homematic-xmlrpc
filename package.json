@@ -9,7 +9,7 @@
     "homematic",
     "bidcos"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "preferGlobal": false,
   "homepage": "https://github.com/hobbyquaker/homematic-xmlrpc",
   "author": "hobbyquaker <hq@ccu.io> (https://github.com/hobbyquaker)",
