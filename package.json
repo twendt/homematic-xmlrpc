@@ -26,7 +26,7 @@
   },
   "main": "./lib/xmlrpc.js",
   "dependencies": {
-    "sax": "0.4.x",
+    "node-xml-stream-parser": "1.0.10",
     "xmlbuilder": "https://github.com/hobbyquaker/xmlbuilder-js/tarball/29fe5030dc6852007dc8d1bfd5109d75f8da58d5"
   },
   "devDependencies": {
